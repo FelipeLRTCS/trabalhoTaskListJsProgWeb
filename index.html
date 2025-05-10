@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="painel criar-task">
+            <h2>Criar task</h2>
+            <form id="formNovaTask">
+                <div>
+                    <label for="nomeTask">Nome:</label>
+                    <input type="text" id="nomeTask" required>
+                </div>
+                <div>
+                    <label for="descricaoTask">Descrição:</label>
+                    <textarea id="descricaoTask" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="urgenciaTask">Urgência:</label>
+                    <select id="urgenciaTask">
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+                <button type="submit">Adicionar Task</button>
+            </form>
+        </div>
+        <div class="painel lista-tasks">
+            <h2>Lista de tasks</h2>
+            <div id="tasksContainer">
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
